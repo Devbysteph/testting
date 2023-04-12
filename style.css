@@ -1,0 +1,28 @@
+@tailwind base; /* Preflight will be injected here */
+@tailwind components;
+@tailwind utilities;
+
+.nav-menu {
+  cursor: pointer;
+}
+
+.left-side {
+  flex: 1 1 10rem;
+}
+.right-side {
+  flex: 1 1 10rem;
+}
+
+.answer {
+  overflow: hidden;
+  max-height: 0px;
+}
+
+.faq.active .answer {
+  max-height: 300px;
+  transition: ease-in 0.8s;
+}
+.faq.active .drop-arrow {
+  transform: rotate(180deg);
+  transition: ease-in 0.2s;
+}
